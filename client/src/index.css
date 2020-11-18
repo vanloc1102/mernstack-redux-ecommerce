@@ -1,0 +1,21 @@
+.slider img,
+.card-image {
+    height: 450px;
+    object-fit: cover;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 1050px) {
+    .main-header {
+        display: none;
+    }
+}
+
+@media (min-width: 1051px) {
+    .responsive-header {
+        display: none;
+    }
+}
