@@ -12,8 +12,10 @@ const app = express();
 // db
 mongoose
     .connect(
+        // process.env.DATABASE ||
+        //     "mongodb://localhost:27017/ecommerce-react-redux-mern",
         process.env.DATABASE ||
-            "mongodb://localhost:27017/ecommerce-react-redux-mern",
+            "mongodb+srv://root:root@singapore.njw09.mongodb.net/mern-firstapp-redux?retryWrites=true&w=majority",
         {
             useNewUrlParser: true,
             useCreateIndex: true,
@@ -37,6 +39,6 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // port
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));

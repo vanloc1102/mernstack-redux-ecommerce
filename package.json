@@ -12,6 +12,9 @@
     "client": "cd client && npm start",
     "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon server.js\" \"npm run client\""
   },
+  "engines": {
+    "node": "14.13.0"
+  },
   "author": "locnv",
   "license": "ISC",
   "dependencies": {
